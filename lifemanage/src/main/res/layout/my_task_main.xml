@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#eee">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarMyTask"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:titleText="我的任务"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        custom:leftBackground="@mipmap/back"
+        custom:rightText="保存"
+        custom:rightTextColor="#fff"
+        >
+    </com.xy.lifemanage.view.TopBar>
+
+    <ExpandableListView
+        android:id="@+id/my_task_list"
+        android:layout_below="@id/topBarMyTask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:id="@+id/topGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:visibility="gone"
+        android:layout_alignParentTop="true">
+
+        <com.xy.lifemanage.view.myview.CircleImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingTop="10dip"
+            android:src="@mipmap/user_group" >
+        </com.xy.lifemanage.view.myview.CircleImageView>
+
+        <RelativeLayout
+            android:id="@+id/layout_013"
+            android:layout_alignRight="@id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/content_001"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                android:textSize="26sp" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/tubiao"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

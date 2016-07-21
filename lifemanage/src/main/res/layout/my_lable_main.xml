@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarMyLable"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:titleText="我的标签"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        custom:leftBackground="@mipmap/back"
+        custom:rightText="保存"
+        custom:rightTextColor="#fff"
+        custom:rightTextSize="25sp"
+        >
+    </com.xy.lifemanage.view.TopBar>
+    <com.xy.lifemanage.view.myview.MyViewGroup
+        android:id="@+id/my_lable_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/my_lable_addlable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:paddingLeft="3dp"
+            android:background="@drawable/button_shape_write"
+            >
+            <ImageView
+                android:src="@mipmap/addlable"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="添加标签"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="#666"
+                android:padding="7.5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.xy.lifemanage.view.myview.MyViewGroup>
+
+</LinearLayout>

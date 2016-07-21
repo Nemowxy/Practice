@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarOrJoin"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:titleText="申请"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        custom:leftBackground="@mipmap/back"
+        custom:rightText="发送"
+        custom:rightTextColor="#fff"
+        custom:rightTextSize="25sp"
+        >
+    </com.xy.lifemanage.view.TopBar>
+    <TextView
+        android:id="@+id/or_join_name"
+        android:text="洋葱校园"
+        android:textColor="#000"
+        android:background="#fff"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:background="#666"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <EditText
+        android:id="@+id/or_join_detail"
+        android:padding="10dp"
+        android:background="#fff"
+        android:hint="加入宣言..."
+        android:gravity="left|top"
+        android:textColorHint="#666"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+</LinearLayout>

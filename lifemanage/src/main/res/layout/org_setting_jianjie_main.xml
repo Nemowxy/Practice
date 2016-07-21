@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarORSettingJianjie"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:leftBackground="@mipmap/back"
+        custom:mtitleTextColor="#ffffff"
+        custom:rightText="保存"
+        custom:rightTextColor="#ffffff"
+        custom:rightTextSize="25sp"
+        custom:titleText="小组简介"
+        custom:titleTextSize="12sp">
+    </com.xy.lifemanage.view.TopBar>
+    <TextView
+        android:id="@+id/org_setting_jianjie_name"
+        android:padding="15dp"
+        android:text="洋葱校园"
+        android:textColor="#666"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#666"
+        android:layout_height="0.5dp"/>
+
+    <EditText
+        android:id="@+id/org_setting_jianjie_detail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="小组简介..."
+        android:gravity="left|top"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textColorHint="#666"
+        />
+
+</LinearLayout>

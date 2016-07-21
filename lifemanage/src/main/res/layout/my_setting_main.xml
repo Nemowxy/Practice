@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarMySet"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:titleText="设置"
+        custom:leftBackground="@mipmap/back"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        >
+    </com.xy.lifemanage.view.TopBar>
+    <LinearLayout
+        android:id="@+id/my_set_jieshao"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:text="产品介绍"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@mipmap/next"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_set_about"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:text="关于我们  "
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@mipmap/next"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/my_set_exit"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button_shape_red"
+        android:text="退出登录"
+        android:textSize="20sp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <com.xy.lifemanage.view.myview.CircleImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/logo_width"
+        android:scaleType="centerCrop"
+        android:layout_height="@dimen/logo_width" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/logo_width"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/ring_name"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:minHeight="@dimen/item_name_min_height"
+                android:text="Jack Boy"
+                android:textColor="#3498DB" />
+            <TextView
+                android:id="@+id/ring_date"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:minHeight="@dimen/item_name_min_height"
+                android:text="Jack Boy"
+                android:textColor="#666" />
+
+            <TextView
+                android:id="@+id/ring_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/item_name_min_height"
+                android:text="今天天气不错哦，打算下午去体育馆打篮球，有一起去的吗~"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <com.xy.lifemanage.view.myview.GridViewInScroll
+            android:id="@+id/gridView"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:scrollbars="none"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"
+            android:numColumns="3"
+            android:layout_width="@dimen/grid_image_width"
+            android:layout_height="@dimen/grid_image_width" />
+    </LinearLayout>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        >
+        <ImageButton
+            android:id="@+id/ring_item_joinButton"
+            android:layout_alignParentLeft="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:background="@mipmap/jiaru"
+            />
+        <TextView
+            android:id="@+id/ring_item_join"
+            android:layout_toRightOf="@+id/ring_item_joinButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="3dp"
+            android:text="加入"
+            android:textColor="#666"
+            />
+        <ImageButton
+            android:id="@+id/ring_item_messageButton"
+            android:layout_toLeftOf="@+id/ring_help"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_gravity="bottom"
+            android:scaleType="fitXY"
+            android:background="@mipmap/sixin"
+            />
+        <TextView
+            android:id="@+id/ring_help"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ring_item_message"
+            android:layout_toRightOf="@+id/ring_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_gravity="bottom"
+            android:text="私信"
+            android:textColor="#666"
+            />
+        <ImageButton
+            android:id="@+id/ring_item_zanButton"
+            android:layout_toLeftOf="@+id/ring_item_zan"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="3dp"
+            android:scaleType="fitXY"
+            android:background="@mipmap/zan2"
+            />
+        <TextView
+            android:id="@+id/ring_item_zan"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:text="赞"
+            android:textColor="#666"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

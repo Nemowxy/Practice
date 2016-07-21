@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBar_ring_shareorg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:leftText="取消"
+        custom:leftTextColor="#ffffff"
+        custom:leftTextSize="20sp"
+        custom:mtitleTextColor="#ffffff"
+        custom:rightText="发布"
+        custom:rightTextColor="#ffffff"
+        custom:rightTextSize="25sp"
+        custom:titleText="分享小组"
+        custom:titleTextSize="12sp">
+    </com.xy.lifemanage.view.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/ring_shareorg_layout_chooseOrg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ring_shareorg_orgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择小组"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/next"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="240dp"
+        android:layout_marginTop="13dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ring_shareorg_et_content"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textColorHint="#666"
+            android:gravity="left|top"
+            android:hint="小组新鲜事..."/>
+
+        <GridView
+            android:id="@+id/ring_shareorg_noScrollgridview"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginLeft="5dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ring_shareorg_layout_chooselable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/ring_shareorg_orglable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招募标签"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/next"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+</LinearLayout>

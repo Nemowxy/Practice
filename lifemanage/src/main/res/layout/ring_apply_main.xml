@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBar_ring_shareorg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:leftText="取消"
+        custom:leftTextColor="#ffffff"
+        custom:leftTextSize="20sp"
+        custom:mtitleTextColor="#ffffff"
+        custom:rightText="发布"
+        custom:rightTextColor="#ffffff"
+        custom:rightTextSize="25sp"
+        custom:titleText="申请"
+        custom:titleTextSize="12sp">
+    </com.xy.lifemanage.view.TopBar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:text="洋葱校园"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:textColor="#b2b2b1"
+        android:background="#ffffff"
+        android:gravity="left|top"
+        android:textSize="18sp"
+        android:hint="加入宣言..."/>
+</LinearLayout>

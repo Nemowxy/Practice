@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarMyMessageConversation"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:titleText="聊天"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        custom:leftBackground="@mipmap/back"
+        >
+    </com.xy.lifemanage.view.TopBar>
+    <fragment
+        android:id="@+id/myfrag"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

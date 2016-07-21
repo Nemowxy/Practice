@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarOrSettingMember"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:titleText="小组成员"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        custom:leftBackground="@mipmap/back"
+        >
+    </com.xy.lifemanage.view.TopBar>
+    <com.xy.lifemanage.view.myview.XListView
+        android:id="@+id/org_setting_member_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_margin="10dp"
+        />
+</LinearLayout>

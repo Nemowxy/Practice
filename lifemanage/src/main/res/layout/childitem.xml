@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/childlayout"
+    android:background="#fff"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/my_task_list_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4月28日 12:40"
+        android:textColor="#666"
+        android:textSize="18sp"
+        />
+    <CheckBox
+        android:id="@+id/my_task_list_item_check"
+        android:layout_alignParentRight="true"
+        android:button="@null"
+        android:background="@drawable/check_selector"
+        android:checked="false"
+        android:layout_alignTop="@id/my_task_list_item_date"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp" />
+    <ImageView
+        android:id="@+id/my_task_list_item_fujian"
+        android:layout_toLeftOf="@id/my_task_list_item_check"
+        android:layout_alignTop="@id/my_task_list_item_date"
+        android:background="@mipmap/fujian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/my_task_list_item_title"
+        android:layout_below="@id/my_task_list_item_date"
+        android:layout_marginTop="10dp"
+        android:text="主题"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/my_task_list_item_detail"
+        android:layout_below="@id/my_task_list_item_title"
+        android:layout_marginTop="10dp"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textColor="#666"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

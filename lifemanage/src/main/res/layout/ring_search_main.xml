@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBar_ring_shareorg"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:leftBackground="@mipmap/next"
+        custom:rightBackground="@mipmap/next"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleText="搜索"
+        custom:titleTextSize="12sp">
+    </com.xy.lifemanage.view.TopBar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="最近搜索"
+        android:textSize="12sp"
+        android:textColor="#b2b2b1"/>
+
+</LinearLayout>

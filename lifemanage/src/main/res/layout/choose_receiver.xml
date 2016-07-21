@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#eee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xy.lifemanage.view.TopBar
+        android:id="@+id/topBarChooseReceiver"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#00BB9C"
+        custom:leftBackground="@mipmap/back"
+        custom:titleText="选择成员"
+        custom:mtitleTextColor="#ffffff"
+        custom:titleTextSize="12sp"
+        >
+    </com.xy.lifemanage.view.TopBar>
+    <com.xy.lifemanage.view.myview.XListView
+        android:id="@+id/choose_receiver_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:divider="#eee"
+        android:dividerHeight="2dp" >
+    </com.xy.lifemanage.view.myview.XListView>
+</LinearLayout>
