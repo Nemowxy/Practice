@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
         Bmob.initialize(this, HttpUtils.APP_ID);
         initView();
+
+        String s = "jjda";
     }
 
     private void initView() {
