@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +26,12 @@ public class JSONUtils {
                 Joken joken = new Joken();
                 joken.setTitle(object.getString("title"));
                 joken.setTime(object.getString("ct"));
-                joken.setText(object.getString("text"));
+                String str = object.getString("text").toString().trim();
+                String s1=str.replaceAll("<p>","");
+                String s2=s1.replaceAll("</p>","");
+                String s3=s2.replaceAll("&nbsp;","");
+                System.out.println(s3);
+                joken.setText(s3);
                 list.add(joken);
             }
         } catch (JSONException e) {

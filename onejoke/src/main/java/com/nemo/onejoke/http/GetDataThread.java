@@ -44,7 +44,6 @@ public class GetDataThread extends Thread{
 
             @Override
             public void onSuccess(int i, String s) {
-                System.out.println("success:"+s);
                 Message message = new Message();
                 message.obj = JSONUtils.getJoken(s);
                 if(type.equals("1"))
