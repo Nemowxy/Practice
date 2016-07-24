@@ -28,16 +28,20 @@ public class DBHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
-        String sql = "create table "+tableName+"(id int,name varchar(20))";
-        sqLiteDatabase.execSQL(sql);
-        database = this.getReadableDatabase();
+        System.out.println("create OK");
     }
 
     public void createTable(String name){
-        tableName = name;
+        if (database == null){
+            database = getReadableDatabase();
+        } else {
+            String sql = "create table "+name+"(id int,name varchar(20))";
+            database.execSQL(sql);
+        }
     }
 
     public SQLiteDatabase getDatabase(){
+        database = this.getReadableDatabase();
         return database;
     }
 
