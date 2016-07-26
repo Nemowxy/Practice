@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:peng="http://schemas.android.com/apk/res-auto"
+     >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/main_activity"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/rg_main_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.09"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <com.nemo.samplenews.view.PengRadioButton
+            android:id="@+id/rb_main_tab_menu1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@drawable/text_selector"
+            peng:peng_drawableTop="@drawable/bottom1"
+            peng:peng_drawableTopHeight="7dp"
+            peng:peng_drawableTopWith="7dp"
+            android:text="新闻"
+            android:textSize="10sp"
+            />
+
+        <com.nemo.samplenews.view.PengRadioButton
+            android:id="@+id/rb_main_tab_menu2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_selector"
+            peng:peng_drawableTop="@drawable/bottom2"
+            peng:peng_drawableTopHeight="7dp"
+            peng:peng_drawableTopWith="7dp"
+            android:text="关注"
+            android:textSize="10sp"
+            />
+
+        <com.nemo.samplenews.view.PengRadioButton
+            android:id="@+id/rb_main_tab_menu3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/text_selector"
+            peng:peng_drawableTop="@drawable/bottom3"
+            peng:peng_drawableTopHeight="7dp"
+            peng:peng_drawableTopWith="7dp"
+            android:text="我的"
+            android:textSize="10sp"
+            />
+
+    </RadioGroup>
+</LinearLayout>
