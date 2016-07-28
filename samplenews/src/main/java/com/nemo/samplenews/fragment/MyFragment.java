@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.nemo.samplenews.R;
+
 /**
  * Created by nemo on 2016/7/25 0025.
  */
@@ -19,8 +21,8 @@ public class MyFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         if(rootView==null){
+            rootView = inflater.inflate(R.layout.my_fragment,container,false);
         }
-
         return rootView;
     }
 }
