@@ -14,7 +14,6 @@ import android.widget.SimpleAdapter;
 
 import com.nemo.joke.R;
 import com.nemo.joke.bean.Channel;
-import com.nemo.joke.http.GetChannelList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -50,7 +49,7 @@ public class LikeFragment extends Fragment{
         if(rootView == null){
             rootView = inflater.inflate(R.layout.like_fragment,container,false);
             initView();
-            new GetChannelList(handler).start();
+           // new GetChannelList(handler).start();
         }
 
         return rootView;

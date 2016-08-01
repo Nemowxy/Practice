@@ -12,8 +12,9 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.nemo.samplenews.R;
-import com.nemo.samplenews.utils.Utils;
+import com.nemo.joke.R;
+import com.nemo.joke.utils.Utils;
+
 
 public class TopBar extends RelativeLayout {
 	private Button leftButton;

@@ -18,7 +18,7 @@ import android.net.Uri;
 import android.util.AttributeSet;
 import android.widget.ImageView;
 
-import com.nemo.samplenews.R;
+import com.nemo.joke.R;
 
 
 public class CircleImageView extends ImageView {

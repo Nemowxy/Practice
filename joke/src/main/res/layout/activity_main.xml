@@ -23,7 +23,7 @@
         android:orientation="horizontal"
         android:weightSum="3" >
 
-        <com.nemo.samplenews.view.PengRadioButton
+        <com.nemo.joke.view.PengRadioButton
             android:id="@+id/rb_main_tab_menu1"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -41,7 +41,7 @@
             android:textSize="10sp"
             />
 
-        <com.nemo.samplenews.view.PengRadioButton
+        <com.nemo.joke.view.PengRadioButton
             android:id="@+id/rb_main_tab_menu2"
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -58,7 +58,7 @@
             android:textSize="10sp"
             />
 
-        <com.nemo.samplenews.view.PengRadioButton
+        <com.nemo.joke.view.PengRadioButton
             android:id="@+id/rb_main_tab_menu3"
             android:layout_width="0dp"
             android:layout_weight="1"

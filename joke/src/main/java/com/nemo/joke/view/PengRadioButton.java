@@ -6,7 +6,8 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.RadioButton;
 
-import com.nemo.samplenews.R;
+import com.nemo.joke.R;
+
 
 public class PengRadioButton extends RadioButton {
 	private Drawable drawableTop, drawableBottom, drawableLeft, drawableRight;

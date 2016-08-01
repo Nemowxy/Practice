@@ -19,7 +19,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.nemo.samplenews.R;
+import com.nemo.joke.R;
 
 
 public class XListViewHeader extends LinearLayout {

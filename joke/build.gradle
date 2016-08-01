@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    compileSdkVersion 23
+    buildToolsVersion '23.0.1'
 
     defaultConfig {
         applicationId "com.nemo.joke"
@@ -18,10 +18,22 @@ android {
         }
     }
 }
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile files('libs/ApiStoreSDK1.0.4.jar')
+    compile 'com.squareup.picasso:picasso:2.3.2'
+    compile files('libs/volley.jar')
+    compile name: 'SMSSDK-2.1.1', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.1.1', ext: 'aar'
+    compile files('libs/MobCommons-2016.0714.1402.jar')
+    compile files('libs/MobTools-2016.0714.1402.jar')
+    compile 'com.jakewharton:butterknife:8.2.1'
 }

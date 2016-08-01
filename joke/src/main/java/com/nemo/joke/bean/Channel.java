@@ -6,8 +6,9 @@ package com.nemo.joke.bean;
 public class Channel {
     private String name;
     private String channelId;
-    public Channel(String s){
+    public Channel(String s,String id){
         name = s;
+        channelId = id;
     }
 
     public Channel(){
